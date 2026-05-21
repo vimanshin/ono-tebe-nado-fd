@@ -26,7 +26,7 @@
   font-size: 18px;
   line-height: normal;
   text-decoration: underline;
-  text-underline-offset: 3px;
+  text-underline-offset: 4px;
 }
 
 .header__menu-link--active {
@@ -55,7 +55,7 @@
 
 .header__contacts-link {
   text-decoration: underline;
-  text-underline-offset: 3px;
+  text-underline-offset: 4px;
 }
 
 /* Секция cover */
@@ -206,7 +206,7 @@
   font-size: 22px;
   line-height: 1.2;
   text-decoration: underline;
-  text-underline-offset: 3px;
+  text-underline-offset: 4px;
   text-transform: uppercase;
 }
 
@@ -223,5 +223,115 @@
   color: #000;
   font-size: 20px;
   text-decoration: underline;
-  text-underline-offset: 3px;
+  text-underline-offset: 4px;
+}
+
+/* Секция about */
+.about {
+  display: grid;
+  grid-template-columns: 359px 1fr;
+  margin: 120px 24px 0;
+}
+
+.about__logo {
+  display: flex;
+  justify-content: center;
+}
+
+.about__logo-circle {
+  margin-top: 35px;
+  margin-right: 28px;
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about__logo-image {
+  width: 148px;
+  height: 114px;
+}
+
+.about__content {
+  margin-top: 133px;
+}
+
+.about__title {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 100px;
+  text-transform: uppercase;
+}
+
+.about__texts {
+  margin-right: 5px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+}
+
+.about__text {
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+/* Секция footer */
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  padding: 40px 50px;
+  margin-top: 132px;
+}
+
+.footer__contacts {
+  margin-top: 9px;
+  display: flex;
+  flex-direction: column;
+  max-width: 260px;
+  color: #000;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 1.35;
+}
+
+.footer__contacts-link {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.footer__menu {
+  margin-bottom: 23px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__menu-link {
+  color: #000;
+  font-size: 18px;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.footer__menu-link--active {
+  text-decoration: none;
+}
+
+.footer__socials {
+  margin-bottom: 38px;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  column-gap: 48px;
+}
+
+.footer__socials-icon {
+  width: 48px;
+  height: 48px;
+  display: block;
 }

@@ -34,14 +34,16 @@ https://github.com/vimanshin/ono-tebe-nado-fd
 ### Стек технологий
 
 - Семантическая разметка HTML5
-- CSS custom properties
+- CSS
 - Flexbox
+- Grid
 
 ### Чему я научился
 
 - Семантическая HTML-структура с BEM
 - Flexbox для центрирования и вёрстки
-- Box model, border-radius, box-shadow
+- Box model, border-radius
+- Остались вопросы, как сделать лучше, есть отклонения от учебного макета. Может сам макет с ошибками?
 
 ## Автор
 
