@@ -23,11 +23,11 @@ https://github.com/vimanshin/ono-tebe-nado-fd
 
 ### Скриншот
 
-![](./)
+![](./ono-tebe-nado.png)
 
 ### Ссылки
 
-- URL живого сайта: [Ссылка на живой сайт](https://vimanshin.github.io/)
+- URL живого сайта: [Ссылка на живой сайт](https://vimanshin.github.io/ono-tebe-nado-fd/)
 
 ## Процесс работы
 
