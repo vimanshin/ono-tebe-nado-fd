@@ -9,7 +9,6 @@
 .header__menu {
   display: flex;
   column-gap: 10px;
-  list-style: none;
 }
 
 .header__menu-item {
