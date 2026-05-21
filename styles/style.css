@@ -1,15 +1,15 @@
-/* место для вашего кода */
+/* header */
 .header {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
-  padding: 92px 50px 96px;
+  padding: 92px 50px 94px;
 }
 
 .header__menu {
-  list-style: none;
   display: flex;
   column-gap: 10px;
+  list-style: none;
 }
 
 .header__menu-item {
@@ -43,22 +43,95 @@
 }
 
 .header__contacts {
-  justify-self: end;
-  max-width: 236px;
   display: flex;
   flex-direction: column;
+  justify-self: end;
+  max-width: 236px;
+  color: #000;
+  font-size: 18px;
   font-style: normal;
+  line-height: 1.35;
 }
 
 .header__contacts-link {
-  color: #000;
-  font-size: 18px;
   text-decoration: underline;
   text-underline-offset: 3px;
 }
 
-.contacts {
-  color: #000;
-  font-size: 18px;
-  line-height: 24.3px;
+/* Секция cover */
+
+.cover {
+  position: relative;
+  min-height: 757px;
+  overflow: hidden;
+  background-image: url('../images/cover.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.cover__overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.cover__title {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  padding: 165px 20px 0 50px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 1.15;
+  letter-spacing: 30px;
+  text-transform: uppercase;
+}
+
+/* ОНО — слева */
+.cover__title-word:nth-child(1) {
+  align-self: flex-start;
+}
+
+/* ТЕБЕ — по центру */
+.cover__title-word:nth-child(2) {
+  align-self: center;
+}
+
+/* НАДО — справа */
+.cover__title-word:nth-child(3) {
+  align-self: flex-end;
+}
+
+.cover__bottom {
+  position: absolute;
+  bottom: 0;
+  left: 50px;
+  right: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+.cover__description {
+  color: #fff;
+  font-family: Raleway;
+  font-size: 22px;
+  line-height: 1.27;
+  word-spacing: 18px;
+  text-transform: uppercase;
+}
+
+.cover__button {
+  width: 256px;
+  height: 51px;
+  border: 1px solid #fff;
+  color: #fff;
+  font-size: 22px;
+  text-transform: uppercase;
+  background-color: transparent;
+  cursor: pointer;
 }
