@@ -41,36 +41,45 @@
   height: 105px;
 }
 
-.header__contacts {
+/* Общие стили header и footer*/
+
+.contacts {
   display: flex;
   flex-direction: column;
-  justify-self: end;
-  max-width: 236px;
   color: #000;
   font-size: 18px;
   font-style: normal;
   line-height: 1.35;
 }
 
-.header__contacts-link {
+.contacts-link {
   text-decoration: underline;
   text-underline-offset: 4px;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+/*Отсечка для общих стилей*/
+
+.header__contacts {
+  justify-self: end;
+  max-width: 236px;
 }
 
 /* Секция cover */
 .cover {
   position: relative;
+  display: flex;
+  flex-direction: column;
   min-height: 757px;
   overflow: hidden;
   background-image: url('../images/cover.jpg');
   background-position: center;
   background-size: cover;
-}
-
-.cover__overlay {
-  position: absolute;
-  inset: 0;
-  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .cover__title {
@@ -101,14 +110,12 @@
 }
 
 .cover__bottom {
-  position: absolute;
-  right: 50px;
-  bottom: 0;
-  left: 50px;
+  margin-top: auto;
+  z-index: 1;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 50px;
+  padding: 0 50px 50px;
 }
 
 .cover__description {
@@ -146,7 +153,7 @@
 .lots__list {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 25px;
+  gap: 25px;
   list-style: none;
 }
 
@@ -164,31 +171,26 @@
 .lots__article {
   position: relative;
   display: flex;
+  justify-content: space-between;
   flex-direction: column;
   height: 100%;
   background-position: center;
   background-size: cover;
 }
 
-.lots__article--lot-1 {
+.lots__article--film {
   background-image: url('../images/card-lot-01.jpg');
 }
 
-.lots__article--lot-2 {
+.lots__article--book {
   background-image: url('../images/card-lot-02.jpg');
 }
 
-.lots__article--lot-3 {
+.lots__article--painting {
   background-image: url('../images/card-lot-03.jpg');
 }
 
-.lots__item-overlay {
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-  background-color: rgba(0, 0, 0, 0.6);
-}
-
+/*
 .lots__item-content {
   position: relative;
   z-index: 1;
@@ -198,8 +200,10 @@
   height: 100%;
   padding: 48px 40px;
 }
-
+*/
 .lots__item-title {
+  z-index: 1;
+  padding: 48px 40px 0;
   color: #fff;
   font-weight: 700;
   font-size: 22px;
@@ -210,6 +214,8 @@
 }
 
 .lots__item-description {
+  padding: 0 40px 48px;
+  z-index: 1;
   color: #fff;
   font-size: 20px;
   line-height: 1.2;
@@ -287,19 +293,8 @@
 }
 
 .footer__contacts {
-  display: flex;
-  flex-direction: column;
   max-width: 260px;
   margin-top: 9px;
-  color: #000;
-  font-size: 18px;
-  font-style: normal;
-  line-height: 1.35;
-}
-
-.footer__contacts-link {
-  text-decoration: underline;
-  text-underline-offset: 4px;
 }
 
 .footer__menu {
